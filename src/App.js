@@ -5,13 +5,13 @@ import DB from "./data/db.json";
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <Home data = {DB}/>
       
-      <Home data = {DB}/>
-      
+   
 
 
-    </div>
+    </>
   );
 }
 
