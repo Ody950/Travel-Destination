@@ -1,16 +1,26 @@
 
 
 import Tour from "../tours/tour/Tour";
-
-
+import { Link, useParams } from 'react-router-dom'
+import Card from 'react-bootstrap/Card';
 function Tours(props) {
   return (
 
     <>
 
-      <Tour dataaa={props.dataa} />
-
       
+
+
+      {props.dataa.map((items) => {
+
+
+        return (
+          <section key={items.id}>
+          <Tour image={items.image} id={items.id} name={items.name}/>
+          </section>
+        )
+
+      })}
     </>
 
 

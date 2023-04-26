@@ -17,27 +17,17 @@ function Tour(props) {
     <>
 
 
-      {props.dataaa.map((items) => {
+          <section key={props.id} className='tour1'>
+ 
 
+            <Link to={`/city/${props.id}`} > <Card className='card1' key={props.id}>
 
-        return (
-          <tour key={items.id} className='tour1'>
-            
-
-            <Link to={`/city/${items.id}`} > <Card className='card1' >
-
-              <Card.Title className='text1'>{items.name}</Card.Title>
-              <Card.Img className='image1' variant="top" src={items.image} />
+              <Card.Title className='text1'>{props.name}</Card.Title>
+              <Card.Img className='image1' variant="top" src={props.image} />
+              
+             
             </Card></Link>
-          </tour>
-
-
-        )
-
-
-
-      })}
-
+          </section>
 
 
     </>
