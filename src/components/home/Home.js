@@ -11,10 +11,8 @@ return(
 
 <>
 
-<Header/>
 <Tours dataa={props.data}/>
 <Footer/>
-
 
 
 </>
