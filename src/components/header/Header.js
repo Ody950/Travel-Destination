@@ -1,14 +1,18 @@
 
-
-
+import Navbar1 from "../Navbar/Navbar";
+import  './Header.css';
 
 
 function Header() {
   return (
-    <div className="Header">
-      <h1>Travel Destination </h1>
+    <>
+    
+    
+      <h1 className="Headerzz">Travel Destination </h1>
+
+      <Navbar1/>
       
-    </div>
+    </>
   );
 }
 
@@ -17,10 +21,6 @@ function Header() {
 
 
 export default Header;
-
-
-
-
 
 
 
